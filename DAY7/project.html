@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Project</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { background-color: #f8f9fa; }
+    .card { border-radius: 12px; box-shadow: 0px 4px 10px rgba(0,0,0,0.1); }
+    .card img { border-top-left-radius: 12px; border-top-right-radius: 12px; }
+    .tech-icons i { font-size: 20px; margin-right: 10px; }
+    .btn-custom { width: 48%; }
+  </style>
+</head>
+<body class="bg-light">
+
+   <!-- Navbar -->
+     <nav class="navbar navbar-expand-lg bg-body-tertiary " style="margin: 0 50px;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">
+        <img style="width: 50px;" src="data:image/png;base64,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" alt="" srcset="">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="gap: 35px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project.html">My Project</a>
+        </li>
+       
+      </ul>
+     <a href="contact.html" class="btn btn-outline-success" style="background-color: black; color: white;">
+  Contact Me
+</a>
+
+    </div>
+  </div>
+</nav>
+
+  <div class="container my-5">
+   <!-- FORM -->
+    <form id="projectForm" class="p-4 bg-white rounded shadow-sm mb-5">
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Project Name</label>
+        <input type="text" id="title" class="form-control" required>
+      </div>
+      <div class="row">
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-semibold">Start Date</label>
+          <input type="date" id="startDate" class="form-control" required>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label class="form-label fw-semibold">End Date</label>
+          <input type="date" id="endDate" class="form-control" required>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Description</label>
+        <textarea id="desc" class="form-control" rows="3" required></textarea>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Technologies</label>
+        <div class="row">
+          <div class="col-6">
+            <div class="form-check">
+              <input type="checkbox" id="nodejs" class="form-check-input">
+              <label for="nodejs" class="form-check-label">Node Js</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input type="checkbox" id="nextjs" class="form-check-input">
+              <label for="nextjs" class="form-check-label">Next Js</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input type="checkbox" id="reactjs" class="form-check-input">
+              <label for="reactjs" class="form-check-label">React Js</label>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-check">
+              <input type="checkbox" id="ts" class="form-check-input">
+              <label for="ts" class="form-check-label">TypeScript</label>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label class="form-label fw-semibold">Upload Image</label>
+        <input type="file" id="img" class="form-control">
+      </div>
+      <button type="submit" class="btn btn-dark">Submit</button>
+    </form>
+
+    <!-- PROJECT LIST -->
+    <h3 class="fw-bold mb-3">My Projects</h3>
+    <div class="row" id="project-list"></div>
+  </div>
+ 
+
+
+<script>
+  // --- Ambil data project dari localStorage (kalau ada)
+  let projects = JSON.parse(localStorage.getItem("projects")) || [];
+
+  const list = document.getElementById("project-list");
+  const form = document.getElementById("projectForm");
+
+  // --- Function render (pakai filter + map)
+  function renderProjects() {
+    // filter: hanya tampilkan project yang punya title (callback function)
+    const filteredProjects = projects.filter(p => p.title.trim() !== "");
+
+    // map: ubah setiap project jadi elemen HTML
+    const projectCards = filteredProjects.map((p, index) => {
+      return `
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="${p.img}" class="card-img-top" alt="Project Image">
+            <div class="card-body">
+              <h5 class="card-title">${p.title}</h5>
+              <small class="text-muted">${p.date}</small>
+              <p class="card-text mt-2">${p.desc}</p>
+              <div class="tech-icons mb-3">
+                ${p.tech.map(icon => `<i class="${icon}"></i>`).join("")}
+              </div>
+              <a href="detailproject.html?id=${index}" class="btn btn-dark btn-sm">Detail</a>
+            </div>
+          </div>
+        </div>
+      `;
+    }).join(""); // ubah array HTML jadi satu string
+
+    // tampilkan hasil map ke halaman
+    list.innerHTML = projectCards;
+  }
+
+  // --- Function untuk tambah project
+  function addProject(title, start, end, desc, img, tech) {
+    projects.push({
+      title,
+      date: `${start} - ${end}`,
+      desc,
+      img,
+      tech
+    });
+    // callback: simpan lagi ke localStorage
+    localStorage.setItem("projects", JSON.stringify(projects));
+    renderProjects();
+  }
+
+  // --- Event listener saat form disubmit
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const title = document.getElementById("title").value;
+    const start = document.getElementById("startDate").value;
+    const end = document.getElementById("endDate").value;
+    const desc = document.getElementById("desc").value;
+    const imgInput = document.getElementById("img");
+
+    // ambil tech yang dicentang
+    const tech = [];
+    if (document.getElementById("nodejs").checked) tech.push("fab fa-node-js");
+    if (document.getElementById("reactjs").checked) tech.push("fab fa-react");
+    if (document.getElementById("ts").checked) tech.push("fab fa-js-square");
+
+    // handle upload gambar (convert ke Base64)
+    if (imgInput.files && imgInput.files[0]) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+        addProject(title, start, end, desc, e.target.result, tech);
+      };
+      reader.readAsDataURL(imgInput.files[0]);
+    } else {
+      addProject(title, start, end, desc, "https://via.placeholder.com/300x200", tech);
+    }
+
+    form.reset();
+  });
+
+  // --- Render awal saat halaman dibuka
+  renderProjects();
+</script>
+
+
+
+
+</body>
+</html>
+
+  
+</body>
+</html>
